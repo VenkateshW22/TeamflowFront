@@ -23,7 +23,7 @@ export default defineConfig(({ mode }) => ({
     port: 5173,
     proxy: {
       '/api': {
-        target: process.env.VITE_API_URL || 'http://localhost:8080',
+        target: process.env.VITE_API_URL || 'http://tfbe.ap-south-1.elasticbeanstalk.com',
         changeOrigin: true,
         secure: false,
       },
